@@ -9,8 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "antd": "^5.0.2",
+    "html-react-parser": "^3.0.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-media": "^1.10.0",
+    "scroll-into-view-if-needed": "^2.2.31",
+    "styled-components": "^5.3.6",
+    "swiper": "^8.4.5"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
