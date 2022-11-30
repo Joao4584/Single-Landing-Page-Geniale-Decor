@@ -13,8 +13,7 @@ export const Container = styled.div`
     align-items: center;
 
     .item-img{
-        width: 50%;
-        width: 50%;
+        width: 55%;
         height: 100%;
         display: flex;
         align-items: center;
@@ -25,7 +24,7 @@ export const Container = styled.div`
     }
 
     .item-text{
-        width: 50%;
+        width: 45%;
         height: 100%;
         display: flex;
         align-items: center;

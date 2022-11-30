@@ -1,6 +1,6 @@
 // * Modules * //
 import styled, { css } from 'styled-components'; 
-import wave from '../assets/layered-waves.svg'
+import wave from '../assets/layered-waves.svg';
 // * Styles * //
 export const Container = styled.div`
     position: relative;

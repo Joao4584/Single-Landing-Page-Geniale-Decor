@@ -3,6 +3,7 @@ import React, {  } from 'react'
 
 // * Exports * //
 import * as Styled from '../styles/Global';
+import { Footer } from './footer';
 import { Header } from './header';
 import { Main } from './main';
 import { AcessSite } from './sections/acesseSite';
@@ -25,6 +26,7 @@ export default function App(props) {
 
         </div>
     
+            <Footer />
     
 
     </Styled.App>

@@ -12,6 +12,7 @@ export const GlobalStyles = createGlobalStyle`
      body{
         margin: 0;
         padding: 0;
+        background-color: #787775;
     }
 
     a{
@@ -47,12 +48,11 @@ export const App = styled.div`
             position: relative;
             min-height: 600px;
             padding-bottom: 100px;
-            box-shadow: 1px 23px 0px 5px #000000;
             
         }
 
         .red-text-main{
-            color: #d70a0a;
+            color: #861414;
             font-weight: bold;
         }
         .sub-tittle{

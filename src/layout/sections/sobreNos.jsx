@@ -5,7 +5,7 @@ import parse from 'html-react-parser'
 
 // * Exports * //
 import { Container } from '../../styles/sobreNos.style'
-import bannerImg from '../../assets/wavs.png'
+import bannerImg from '../../assets/logo.png'
  
 // * Components * //
 export function SobreNos(props) {
