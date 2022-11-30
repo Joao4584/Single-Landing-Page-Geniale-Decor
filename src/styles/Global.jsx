@@ -1,16 +1,62 @@
-import styled, { css } from 'styled-components';
+import styled, { createGlobalStyle  } from 'styled-components';
 
-export const GlobalStyles = styled.div`
+
+export const GlobalStyles = createGlobalStyle`
 
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
-    font-family: 'Inter', sans-serif;;
+    *{
+        font-family: 'Inter', sans-serif;
+    }
 
-    //?  Variables CSS
-    --main-Red: ${ defaultColors.mainRed };
-    --sub-title-h4: ${ defaultColors.COR_SUB_TITULO };
-    --main-color:   ${ defaultColors.COR_TEMA_PADRAO };
-    --main-color-dark:  ${ defaultColors.COR_TEMA_PADRAO_ESCURO };
-    --p-color: ${ defaultColors.TEXT_COR };
+     body{
+        margin: 0;
+        padding: 0;
+    }
 
+    a{
+        color: inherit;
+        text-decoration: none;
+    }
+
+    ul{
+        list-style: none
+    }
+
+
+    .center-relative{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .object-center-relative{
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+`;
+
+export const App = styled.div`
+
+    .center-radius{
+           
+            width: 100%;
+            max-width: 1350px;
+            position: relative;
+            min-height: 600px;
+            padding-bottom: 100px;
+            box-shadow: 1px 23px 0px 5px #000000;
+            
+        }
+
+        .red-text-main{
+            color: #d70a0a;
+            font-weight: bold;
+        }
+        .sub-tittle{
+            color : #841B1B;
+            font-size: 18px
+        }
 `;
