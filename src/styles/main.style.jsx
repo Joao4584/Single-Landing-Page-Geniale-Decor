@@ -23,17 +23,19 @@ export const Container = styled.div`
     .centerModel{
             width: 100%;
             max-width: 1300px;
-            position: relative;
+            position: absolute;
             top: 250px;
             left: 50%;
             transform: translateX(-50%);
+            z-index: 10;
 
     }
 
     .text-section{
         padding: 15px;
-        position: relative;
+        position: absolute;
         width: 500px;
+        
 
         h2{
             margin: 0;
@@ -56,6 +58,7 @@ export const Container = styled.div`
             border-radius: 10px;
             text-align: center;
             border-radius: 8px;
+     
             
         }
     }
@@ -64,11 +67,61 @@ export const Container = styled.div`
         width: 100%;
         height: 350px;
         position: absolute;
+        z-index: 0;
         bottom: 0;
         background-image: url(${wave});
         background-size: cover;
         background-position: bottom;
        
+    }
+
+
+
+    @media (max-width: 600px){
+        
+        .text-section{
+            padding: 15px;
+            position: absolute;
+            width: 80%;
+            
+
+            h2{
+                margin: 0;
+                color: ${props => props.mainColors.titleWhite};
+                font-size: 3rem;
+            }
+
+            p{
+                color: ${props => props.mainColors.textWhite};
+                font-size: 1.1rem;
+                margin: 3px;
+                margin-bottom: 25px;
+            }
+
+            .buttonMain{
+                color: ${props => props.mainColors.textWhite};
+                background-color: ${props => props.mainColors.mainRed};
+                width: 140px;
+                padding: 10px;
+                border-radius: 10px;
+                text-align: center;
+                border-radius: 8px;
+        
+                
+            }
+        }
+
+        .waves-back{
+            width: 100%;
+            height: 350px;
+            position: absolute;
+            z-index: 0;
+            bottom: 0;
+            background-image: url(${wave});
+            background-size: cover;
+            background-position: bottom;
+        
+        }
     }
 
  

@@ -17,12 +17,12 @@ export function Main(props) {
                         <div className='text-section'>
                             <h2>{parse(topHome.title)}</h2>
                             <p className="textMain">{parse(topHome.text)}</p>
-                            <Fade bottom cascade>
                                 <a href={topHome.button.link}>
+                            <Fade bottom cascade>
                                     <div className="buttonMain">{parse(topHome.button.title)}</div>
-                                </a>
 
                             </Fade>
+                                </a>
                         </div>
 
                     </Fade>

@@ -2,10 +2,8 @@
 import React, {  } from 'react'
 import { Container } from '../../styles/footer.style'
 import parse from 'html-react-parser';
-import { BsInstagram } from 'react-icons/bs'
-import { FaFacebookSquare } from 'react-icons/fa'
-import { BiMailSend } from 'react-icons/bi'
-
+import { CiMail } from 'react-icons/ci'
+import { FaInstagram, FaFacebookF } from 'react-icons/fa'
 // * Exports * //
  
  
@@ -14,31 +12,48 @@ export function Footer(props) {
 
  return (
     <Container>
-        <div className="waves-model"></div>
-        <div className="class-content">
-            <div className="mod-div">
-                <div className="imagem">
-                <img src={footerDefault.logo} alt="" className="logo" />
-                <hr width="200"></hr>  
+        <div className='banner-image'>
+
+            <div className="class-grid">
+                <div className="sobre-model">
+                    <h3>Sobre nós</h3>
+                    <p>
+                    Fundada para ser uma organização ímpar no mercado de decoração, a Geniale Decor busca extrair a essência do design inovador, materializando ideias em produtos capazes de fazer pensar, sentir e emocionar.
+                    </p>
                 </div>
-                          
-                <ul className="icons-rede">
-                    <a href="http://"><li className="icon"><BsInstagram/></li></a>
-                    <a href="http://"><li className="icon"><FaFacebookSquare/> </li></a>
-                    
-                </ul>
-            </div>
-            <div className="mod-div">
-            <p>{parse(footerDefault.text)}</p>
-            <div className='email-model'>
-                <div className="icon-mail">
-                    <BiMailSend />
+                 <div className="contacts">
+                     <div className="model-case">
+                        <div className="icon"><CiMail/></div>
+                        <div className="text">
+                     
+                            <p>atendimento@genialedecor.com.br</p>
+                        </div>
+                     </div>
+                     <a href="https://www.instagram.com/genialedecor/">
+                     <div className="model-case">
+                        <div className="icon"><FaInstagram/></div>
+                        <div className="text">
+                            <p>@genialedecor</p>
+                        </div>
+                     </div>
+                        </a>
+                    <a href="https://pt-br.facebook.com/genialedecor/">
+                     <div className="model-case">
+                        <div className="icon"><FaFacebookF/></div>
+                        <div className="text">
+                            <p>@Geniale Decor</p>
+                        </div>
+                     </div>
+                     </a>
                 </div>
-                <p className="text-mail">atendimento@genialedecor.com.br</p>
             </div>
-            </div>
-            
         </div>
+        <div className='colums-footer'>
+            <span className="direitos">
+            © 2022, Todos os direitos reservados por Grupo Geniale.
+            </span>
+        </div>
+
    
 
     </Container>

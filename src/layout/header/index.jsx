@@ -1,5 +1,6 @@
 // * Modules * //
-import React, {  } from 'react'
+import React, { useContext } from 'react'
+import { PopupContext } from '../../context/PopupContext';
 
 // * Exports * //
 import * as Styled from '../../styles/header.style'
@@ -8,7 +9,9 @@ import * as Styled from '../../styles/header.style'
 // * Components * //
 export function Header(props) {
    let buttonsArray = header.buttons
+   const { requestPopup, setRequestPopup } = useContext(PopupContext);
 
+   
  return (
     <Styled.Container mainHeader={header} mainColors={defaultColors} >
       <div className='content-header center-relative'>
@@ -22,7 +25,7 @@ export function Header(props) {
                   </a>
                   )}
    
-            <a href={header.market.link}><li className="btn-red">{header.market.title}
+            <a onClick={() => { setRequestPopup(true)}} ><li className="btn-red">{header.market.title}
             
             </li></a>
          </ul>
