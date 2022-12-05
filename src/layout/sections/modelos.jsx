@@ -5,10 +5,6 @@ import parse from 'html-react-parser';
 
 // * Exports * //
 import { Container } from '../../styles/modelos.style';
-import multifoto from '../../assets/multiFotos.png';
-import PortaRetratos from '../../assets/pr.png'; 
-import luminariaImagem from '../../assets/gdr.png';
-import prateleira from '../../assets/prateleira.png';
 
 // * Components * //
 export function Modelos(props) {
@@ -21,13 +17,13 @@ export function Modelos(props) {
                 <div className='text-model' id="modeloID">
                         
                         <h6 className='sub-tittle'>
-                        {secondSection.subTitle} 
+                        {modelSection.subTitle} 
                         </h6>
                         <h4>
-                            {parse(secondSection.title)} 
+                            {parse(modelSection.title)} 
                         </h4>
                         <p>
-                        {parse(secondSection.text)} 
+                        {parse(modelSection.text)} 
                         </p>
 
                 </div>
@@ -39,14 +35,14 @@ export function Modelos(props) {
                 <Fade bottom cascade>
                     <div className="image">
                         <div className='svg-background'></div>
-                        <img src={PortaRetratos} width="300px" alt="" />
+                        <img src={modelSection.primeiroIMG} width="300px" alt="" />
                     </div>
                     <div className="text">
                         <h4 className="box-title">
-                            Linha Porta Retratos
+                            {parse(modelSection.primeitoTitulo)}
                         </h4>
                         <p className="text-p">
-                            Mais que uma lembrança, nunca se esqueça de seus melhores momentos com a linha multifotos. <br/> Crie e decore sua emoção em um super quadro.
+                            {parse(modelSection.primeiroTexto)}
                         </p>
                     </div>
                 </Fade>
@@ -55,17 +51,17 @@ export function Modelos(props) {
                     <Fade bottom cascade>
                         <div className="text">
                             <h4 className="box-title">
-                                Linha Multifotos
+                            {parse(modelSection.segundoTitulo)}
                             </h4>
                             <p className="text-p">
-                                Mais que uma lembrança, nunca se esqueça de seus melhores momentos com a linha multifotos. <br/> Crie e decore sua emoção em um super quadro.
+                            {parse(modelSection.segundoTexto)} 
                             </p>
                         </div>
                     </Fade>
                     <Fade bottom cascade>
                         <div className="image">
                             <div className='svg-background'></div>
-                            <img src={multifoto} width="350px" alt="" />
+                            <img src={modelSection.segundoIMG} width="350px" alt="" />
                         </div>
                     </Fade>
                 </div>
@@ -76,14 +72,14 @@ export function Modelos(props) {
                 <Fade bottom cascade>
                 <div className="image prateleira">
                         <div className='svg-background'></div>
-                        <img src={prateleira} width="430px" alt="" />
+                        <img src={modelSection.terceiroIMG} width="430px" alt="" />
                     </div>
                     <div className="text">
                         <h4 className="box-title">
-                        Linha Prateleira
+                            {parse(modelSection.terceiroTitulo)}
                         </h4>
                         <p className="text-p">
-                            Mais que uma lembrança, nunca se esqueça de seus melhores momentos com a linha multifotos. <br/> Crie e decore sua emoção em um super quadro.
+                        {parse(modelSection.terceiroTexto)}
                         </p>
                     </div>
                 </Fade>
@@ -94,15 +90,15 @@ export function Modelos(props) {
                    
                     <div className="text">
                         <h4 className="box-title">
-                        Linha Luminária
+                        {parse(modelSection.quartoTitulo)}
                         </h4>
                         <p className="text-p">
-                            Mais que uma lembrança, nunca se esqueça de seus melhores momentos com a linha multifotos. <br/> Crie e decore sua emoção em um super quadro.
+                        {parse(modelSection.quartoTexto)}
                         </p>
                     </div>
                     <div className="image">
                         <div className='svg-background'></div>
-                        <img src={luminariaImagem} width="370px" alt="" />
+                        <img src={modelSection.quartoIMG} width="370px" alt="" />
                     </div>
                 </Fade>
                 </div>

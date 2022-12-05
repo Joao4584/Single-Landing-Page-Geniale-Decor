@@ -15,7 +15,7 @@ export function AcessSite(props) {
     <Container>
             <div className='case'>
                 <div className='text'>
-         <Fade bottom cascade >
+         <Fade bottom >
                         <h4 className="title-model">
                             {acessEcommerceSection.title}
                         </h4>
@@ -23,7 +23,7 @@ export function AcessSite(props) {
                             {acessEcommerceSection.text}
                         </p>
          </Fade>
-         <Fade bottom cascade >  
+         <Fade bottom >  
                    <a onClick={() => { setRequestPopup(true)}}>
                             <div className='modelButton'>
                             {acessEcommerceSection.button.text}

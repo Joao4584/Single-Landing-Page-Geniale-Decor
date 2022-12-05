@@ -1,6 +1,7 @@
 // * Modules * //
 import styled, { css } from 'styled-components'; 
-import image from '../assets/11test.png'
+import image from '../assets/deskModel.png';
+import imageMobile from '../assets/mobileModel.png';
 
 // * Styles * //
 export const Container = styled.div`
@@ -17,7 +18,7 @@ export const Container = styled.div`
         transform: translateX(-50%);
         border-radius: 9px;
         margin-top: 150px;
-        margin-bottom: 110px;
+        margin-bottom: 0px;
 
         .text{
             max-width: 400px;
@@ -96,6 +97,64 @@ export const Container = styled.div`
 
         }
     }
+    }
+
+
+    
+    @media (max-width: 584px){
+         .case{
+        width: 85%;
+        max-width: 890px;
+        background-image: url(${imageMobile});
+        background-position: center;
+        height: 250px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 9px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+        .text{
+            max-width: 400px;
+            width: 90%;
+            position: relative;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+
+            h4{
+                color: #f6f6f6;
+                font-size: 1.3rem;
+                margin: 0px;
+            }
+
+            p{
+                color: #e3e3e3;
+                margin-top: 17px;
+                font-size: .8rem;
+            }
+
+            .modelButton{
+                padding: 10px;
+                border-radius: 6px;
+                border: solid 1px #ffffff ;
+                width: 120px;
+                font-size: .8rem;
+                color: white;
+                text-align: center;
+                background-color: #cbcbcb6b;
+                position: relative;
+                left: 50%;
+                top: .6rem;
+                transform: translateX(-50%);
+            }
+
+        }
+    }
+
+    
     }
 
  
