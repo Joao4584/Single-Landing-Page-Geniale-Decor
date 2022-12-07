@@ -1,4 +1,5 @@
 {
+  "homepage": ".",
   "name": "single-landing-page-geniale-decor",
   "private": true,
   "version": "0.0.0",
@@ -11,8 +12,11 @@
   },
   "dependencies": {
     "antd": "^5.0.2",
+    "axios": "^1.2.1",
     "html-react-parser": "^3.0.4",
+    "logrocket": "^3.0.1",
     "openmobile": "^1.0.0",
+    "primereact": "^8.7.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",

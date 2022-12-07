@@ -14,22 +14,25 @@ export function AcessSite(props) {
  return (
     <Container>
             <div className='case'>
-                <div className='text'>
-         <Fade bottom >
-                        <h4 className="title-model">
-                            {acessEcommerceSection.title}
-                        </h4>
-                        <p className="textModel">
-                            {acessEcommerceSection.text}
-                        </p>
-         </Fade>
-         <Fade bottom >  
-                   <a onClick={() => { setRequestPopup(true)}}>
-                            <div className='modelButton'>
-                            {acessEcommerceSection.button.text}
-                            </div>
-                        </a>
-         </Fade>
+                <div className='black-shadow'>
+                        <div className='text'>
+                <Fade bottom >
+                                <h4 className="title-model">
+                                    {acessEcommerceSection.title}
+                                </h4>
+                                <p className="textModel">
+                                    {acessEcommerceSection.text}
+                                </p>
+                </Fade>
+                <Fade bottom >  
+                        <a onClick={() => { setRequestPopup(true)}}>
+                                    <div className='modelButton'>
+                                    {acessEcommerceSection.button.text}
+                                    </div>
+                                </a>
+                </Fade>
+
+                        </div>
 
                 </div>
             </div>

@@ -41,6 +41,7 @@ export const Container = styled.div`
         transform: translateX(-50%);
         margin-top: 120px;
     
+        
         .box-item{
             display: flex;
             align-items: center;
@@ -49,6 +50,16 @@ export const Container = styled.div`
             margin-bottom: 120px;
             .text{
                 width: 50%;
+
+                .box-title::after{
+                    width: 1rem;
+                    height: 30px;
+                    content: ' ─';
+                    position: relative;
+                    left: 1%;
+                    color: #86282878;
+                }
+
                 h4{          
                 font-weight: 679;
                 font-size: 1.9rem;
@@ -89,8 +100,30 @@ export const Container = styled.div`
                     top: 15%;
                     left: 10%;
                 }
+            }
+
+            .luminary{
+                width: 40%;
+               text-align: center;
+               position: relative;
+                .svg-background{
+                    width: 90%;
+                    height: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    position: absolute;
+                    left: 15%;
+                    top: 0%;
+                    
+                }
+                img{
+                    width: 80%;
+                
+                }
 
 
+             
             }
         }
     }
@@ -169,7 +202,7 @@ export const Container = styled.div`
                     
                 }
                 img{
-                    width: 90%;
+                    width: 80%;
                 
                 }
 
@@ -177,17 +210,71 @@ export const Container = styled.div`
              
             }
             .prateleira{
-                width: 60%;
+                width: 50%;
                 
 
                 .svg-background{
                     background-image: url(${WavesTwo});
                     top: 15%;
                     left: 10%;
+                    width: 60%;
+                    height: 90%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    position: absolute;
+                    left: 20%;
+                      
+                    top: 10%;
+                }  
+
+                img{
+                    width: 100%;
                 }
 
 
             }
+
+            .multifotos-i{
+                width: 40%;
+               text-align: center;
+               position: relative;
+                .svg-background{
+                    background-image: url(${WavesBack});
+                    width: 90%;
+                    height: 130%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    position: absolute;
+                    left: 20px;
+                    top: 0%;
+                    
+                }
+                img{
+                    width: 80%;
+                
+                }
+
+
+             
+            }
+            .luminary{
+                .svg-background{
+                    background-image: url(${WavesBack});
+                    width: 90%;
+                    height: 130%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    position: absolute;
+                    left: 20px;
+                    top: 0%;
+                    
+                }
+            }
+
+            
         }
     }
 
@@ -223,7 +310,7 @@ export const Container = styled.div`
         }
 
     .model-items{
-        width: 100%;
+        width: 95%;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
@@ -233,7 +320,7 @@ export const Container = styled.div`
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 1%;
+            gap: 0%;
             margin-bottom: 120px;
             .text{
                 width: 50%;
@@ -275,16 +362,53 @@ export const Container = styled.div`
              
             }
             .prateleira{
-                width: 60%;
+                width: 50%;
                 
 
                 .svg-background{
                     background-image: url(${WavesTwo});
                     top: 15%;
+                    left: 90%;
+                    width: 90%;
+                    height: 60%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    position: absolute;
                     left: 10%;
+                      
+                    top: 30%;
+                }  
+
+                img{
+                    width: 120%;
                 }
 
 
+            }
+            .luminary{
+                width: 40%;
+               text-align: center;
+               position: relative;
+                .svg-background{
+                    background-image: url(${WavesBack});
+                    width: 90%;
+                    height: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    position: absolute;
+                    left: 15%;
+                    top: 0%;
+                    
+                }
+                img{
+                    width: 100%;
+                
+                }
+
+
+             
             }
         }
     }

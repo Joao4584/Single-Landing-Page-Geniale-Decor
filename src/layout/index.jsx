@@ -10,11 +10,12 @@ import { Main } from './main';
 import { PopUpComponent } from './popup';
 import { AcessSite } from './sections/acesseSite';
 import { Modelos } from './sections/modelos';
- 
+import LogRocket from 'logrocket';
 // * Components * //
 export default function App(props) {
     const { requestPopup, setRequestPopup } = useContext(PopupContext);
     const [ popUp, setPopUp] = useState(<></>);
+    LogRocket.init('6evfm2/teste-geniale-decor');
   
     useEffect(() => {
         if(requestPopup == true){

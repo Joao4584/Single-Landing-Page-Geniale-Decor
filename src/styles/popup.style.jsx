@@ -52,7 +52,7 @@ export const Container = styled.div`
                 position: relative;
 
                 .content-text{
-                    width: 70%;
+                    width: 75%;
                     z-index: 1;
                     position: absolute;
                     left: 50%;

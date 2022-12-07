@@ -35,7 +35,7 @@ export function Modelos(props) {
                 <Fade bottom cascade>
                     <div className="image">
                         <div className='svg-background'></div>
-                        <img src={modelSection.primeiroIMG} width="300px" alt="" />
+                        <img crossorigin src={modelSection.primeiroIMG} width="300px" alt="" />
                     </div>
                     <div className="text">
                         <h4 className="box-title">
@@ -59,9 +59,9 @@ export function Modelos(props) {
                         </div>
                     </Fade>
                     <Fade bottom cascade>
-                        <div className="image">
+                        <div className="image multifotos-i">
                             <div className='svg-background'></div>
-                            <img src={modelSection.segundoIMG} width="350px" alt="" />
+                            <img crossorigin src={modelSection.segundoIMG} width="350px" alt="" />
                         </div>
                     </Fade>
                 </div>
@@ -72,7 +72,7 @@ export function Modelos(props) {
                 <Fade bottom cascade>
                 <div className="image prateleira">
                         <div className='svg-background'></div>
-                        <img src={modelSection.terceiroIMG} width="430px" alt="" />
+                        <img crossorigin src={modelSection.terceiroIMG} width="430px" alt="" />
                     </div>
                     <div className="text">
                         <h4 className="box-title">
@@ -96,9 +96,9 @@ export function Modelos(props) {
                         {parse(modelSection.quartoTexto)}
                         </p>
                     </div>
-                    <div className="image">
+                    <div className="image luminary">
                         <div className='svg-background'></div>
-                        <img src={modelSection.quartoIMG} width="370px" alt="" />
+                        <img crossorigin src={modelSection.quartoIMG} width="370px" alt="" />
                     </div>
                 </Fade>
                 </div>

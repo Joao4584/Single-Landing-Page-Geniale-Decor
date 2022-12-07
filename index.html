@@ -15,86 +15,88 @@
   <body>
     <script>
 
-        const defaultColors = {
-          mainRed: "#782828",
-          backgroundDark: "#1F1F1F",
-          titleWhite: "#E7E7E7",
-          textWhite: "#DFDFDF",
-          subTitle: "#841B1B",
-          titleBlack: "#363636",
-          textBlack: "#696969",
-          backgroundFooter: "#484848",
-          ButtonsFooter: "#343538",
-          titleFooter: "#FFFFFF",
-          textFooter: "#8C8C8C",
+      const defaultColors = {
+        mainRed: "#782828",
+        backgroundDark: "#1F1F1F",
+        titleWhite: "#E7E7E7",
+        textWhite: "#DFDFDF",
+        subTitle: "#841B1B",
+        titleBlack: "#363636",
+        textBlack: "#696969",
+        backgroundFooter: "#484848",
+        ButtonsFooter: "#343538",
+        titleFooter: "#FFFFFF",
+        textFooter: "#8C8C8C",
 
+      }
+
+
+      const header = {
+        logo: "https://www.grupogeniale.com.br/img-asset-prod/Genialedecor11logo.png",
+        buttons: [
+        
+        ],
+        market: {
+          title: "Loja Virtual",
+          link: ""
         }
+      }
 
+      const topHome = {
+        background: "https://www.grupogeniale.com.br/img-asset-prod/BannerCima.jpg",
+        backgroundMobile: "https://www.grupogeniale.com.br/img-asset-prod/bannerMobile2.jpg",
+        
+        title: `Decore novas ideias`,
+        text: `Unimos criatividade a decoração, o resultado só podia ser esse...`,
+        button: {
+          title: "Explore",
+          link: "#modeloID"
+        }
+      }
 
-        const header = {
-          logo: "https://www.grupogeniale.com.br/img-asset-prod/Genialedecor11logo.png",
-          buttons: [
-          
-          ],
-          market: {
-            title: "ECOMMERCE",
+      const modelSection = {
+        subTitle: "Catálogo",
+        title: `Conheça um pouco...`,
+        text: `Explore uma breve apresentação e conheça nossas linhas de produtos exclusivos, de fabricação própria.`,
+        // 1 Itemtemos
+        primeitoTitulo: `Emoções`,
+        primeiroTexto: `Com mais de <code>200</code> modelos, essa linha é capaz de traduzir os mais diversos públicos. Ideal também para presentear!`,
+        primeiroIMG: "https://www.grupogeniale.com.br/img-asset-prod/C02PR04X06(1LE).png",
+        // 2 Item
+        segundoTitulo: `Multifotos Decor`,
+        segundoTexto: `Costumam dizer que uma foto vale mais que mil palavras... Registre milhares com nossos Multifotos!`,
+        segundoIMG: "https://www.grupogeniale.com.br/img-asset-prod/MF04-Preto0001.png",
+
+        // 3 Item
+        terceiroTitulo: `Nichos`,
+        terceiroTexto: `Se você é como nós e adora organização, vai amar saber que agora pode uni-lá a uma decoração despojada!`,
+        terceiroIMG: "https://www.grupogeniale.com.br/img-asset-prod/prateleira.png",
+
+        // 4 Item
+        quartoTitulo: `Luminárias 3D`,
+        quartoTexto: `Torne seu ambiente ainda mais extravagante com nossas luminárias pensadas e traduzidas em acrílico de alta qualidade.`,
+        quartoIMG: "https://www.grupogeniale.com.br/img-asset-prod/Luminaria.png",
+
+      }
+
+      const acessEcommerceSection = {
+          title: "Veja tudo",
+          text: "Entre em nossa loja virtual e confira um vasto acervo de produtos exclusivos a sua espera.",
+          button: {
+            text: "Loja Virtual",
             link: ""
           }
-        }
+      }
 
-        const topHome = {
-          background: "https://www.grupogeniale.com.br/img-asset-prod/backgroundbackgroundMainG.jpg",
-          title: `GENIALE`,
-          text: `Mude a forma que você vê a decoração com os produtos <span class="red-text-main">Geniale</span>.`,
-          button: {
-            title: "Conheça Mais",
-            link: "#modeloID"
-          }
-        }
+      const footerLayout = {
+        textSobre: `Nascemos de um objetivo ímpar para a decoração, com foco em extrair do design produtos capazes de fazer pensar, sentir e emocionar.`,
+        mail: "atendimento@genialedecor.com.br",
+        barPrivacy: `© 2022, Todos os direitos reservados por Grupo Geniale.`,
 
-        const modelSection = {
-          subTitle: "Modelos",
-          title: `Conheça nossas linhas`,
-          text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s`,
-          // 1 Item
-          primeitoTitulo: `Linha Porta Retratos`,
-          primeiroTexto: `Mais que uma lembrança, nunca se esqueça de seus melhores momentos com a linha multifotos. <br/> Crie e decore sua emoção em um super quadro.`,
-          primeiroIMG: "https://www.grupogeniale.com.br/img-asset-prod/pr.png",
-          // 2 Item
-          segundoTitulo: `Linha Multifotos`,
-          segundoTexto: `Mais que uma lembrança, nunca se esqueça de seus melhores momentos com a linha multifotos. <br/> Crie e decore sua emoção em um super quadro.`,
-          segundoIMG: "https://www.grupogeniale.com.br/img-asset-prod/multiFotos.png",
-
-          // 3 Item
-          terceiroTitulo: `Linha Prateleira`,
-          terceiroTexto: `Mais que uma lembrança, nunca se esqueça de seus melhores momentos com a linha multifotos. <br/> Crie e decore sua emoção em um super quadro.`,
-          terceiroIMG: "https://www.grupogeniale.com.br/img-asset-prod/prateleira.png",
-
-          // 4 Item
-          quartoTitulo: `Linha Luminária`,
-          quartoTexto: `Mais que uma lembrança, nunca se esqueça de seus melhores momentos com a linha multifotos. <br/> Crie e decore sua emoção em um super quadro.`,
-          quartoIMG: "https://www.grupogeniale.com.br/img-asset-prod/gdr.png",
-
-        }
-
-        const acessEcommerceSection = {
-            title: "Inove Agora Mesmo",
-            text: "Acesse nosso site e mude a forma que você vê a decoração",
-            button: {
-              text: "Entrar Na Loja",
-              link: ""
-            }
-        }
-
-        const footerLayout = {
-          textSobre: `Fundada para ser uma organização ímpar no mercado de decoração, a Geniale Decor busca extrair a essência do design inovador, materializando ideias em produtos capazes de fazer pensar, sentir e emocionar.`,
-          mail: "atendimento@genialedecor.com.br",
-          barPrivacy: `© 2022, Todos os direitos reservados por Grupo Geniale.`,
-
-        }
+      }
 
 
-    </script>
+  </script>
 
     <div id="root"></div>
 

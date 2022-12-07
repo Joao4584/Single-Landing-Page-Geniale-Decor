@@ -17,7 +17,7 @@ export const Container = styled.div`
         position: relative;
         width: 100%;
         height: 100%;
-        background-color: ${props => props.mainColors.backgroundDark}99;
+        background-color: ${props => props.mainColors.backgroundDark}69;
     }
 
     .centerModel{
@@ -78,7 +78,8 @@ export const Container = styled.div`
 
 
     @media (max-width: 600px){
-        
+        background-image: url(${props => props.mainPresets.backgroundMobile});    
+        background-position: center;
         .text-section{
             padding: 15px;
             position: absolute;
@@ -88,12 +89,12 @@ export const Container = styled.div`
             h2{
                 margin: 0;
                 color: ${props => props.mainColors.titleWhite};
-                font-size: 3rem;
+                font-size: 2.1rem;
             }
 
             p{
                 color: ${props => props.mainColors.textWhite};
-                font-size: 1.1rem;
+                font-size: 0.9rem;
                 margin: 3px;
                 margin-bottom: 25px;
             }

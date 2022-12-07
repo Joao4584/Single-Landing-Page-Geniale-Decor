@@ -16,7 +16,7 @@ export function Header(props) {
     <Styled.Container mainHeader={header} mainColors={defaultColors} >
       <div className='content-header center-relative'>
          <div className='logo'>
-               <img src={header.logo} />
+               <img crossorigin src={header.logo} />
          </div>
          <ul className="section-ul">
             {buttonsArray.map(button => 

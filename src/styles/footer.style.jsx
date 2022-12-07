@@ -13,7 +13,7 @@ export const Container = styled.div`
     transform: translateX(-50%);
     height: 100vh;
     min-height: 470px;
-    background-color: #d7d4d0;
+    background-color: #dad6d4;
 
 
     .banner-image{
@@ -120,6 +120,7 @@ export const Container = styled.div`
         height: 10px;
         bottom: 0px;
         position: absolute;
+        z-index: -1;
         .direitos{
             color: gray;
             position: absolute;
@@ -160,7 +161,7 @@ export const Container = styled.div`
 
     @media (max-width: 720px){
         height: 80vh;
-        min-height: 400px;
+        min-height: 600px;
         .banner-image{
             background-image: url(${banner});
             position: absolute;
@@ -280,7 +281,7 @@ export const Container = styled.div`
             
         }
         .colums-footer{
-            padding-top: 85vh;
+            padding-top: 690px;
             width: 100%;
             height: 30px;
             position: relative;
@@ -296,8 +297,9 @@ export const Container = styled.div`
 
     
     @media (max-width: 590px){
+        background-color: #cac1b9;
         height: 100vh;
-        min-height: 400px;
+        min-height: 750px;
         .banner-image{
             background-image: url(${bannerMobile});
             position: absolute;
@@ -320,7 +322,7 @@ export const Container = styled.div`
                     height: 100px;
                     left: 50%;
                     transform: translateX(-50%);
-                    bottom:230px;
+                    bottom:130px;
                     display: block;
                     justify-content: center;
                     gap: 24%;
@@ -410,7 +412,7 @@ export const Container = styled.div`
             
         }
         .colums-footer{
-            padding-top: 85vh;
+            padding-top: 740px;
             width: 100%;
             height: 70px;
             position: relative;
@@ -541,7 +543,7 @@ export const Container = styled.div`
             
         }
         .colums-footer{
-            padding-top: 85vh;
+            padding-top: 750px;
             width: 100%;
             height: 70px;
             position: relative;
