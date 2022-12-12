@@ -1,6 +1,6 @@
 import axios from 'axios';
 
 export const ApiRequest = axios.create({
-   baseURL: "LinkAPI"
+   baseURL: "https://www.grupogeniale.com.br/geniale-decor-server-api"
 
 }); 

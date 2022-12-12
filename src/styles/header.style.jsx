@@ -58,12 +58,11 @@ export const Container = styled.div`
 
             .btn-red{
                 font-style: normal;
-                font-weight: 300;
-                font-size: 18px;
+                font-size: 1.1rem;
                 transition-duration: .5s;
                 text-align: center;
-                background-color: ${props => props.mainColors.mainRed};
-                padding: 12px;
+                background-color: #2d2d2d;
+                padding: 10px 17px;
                 border-radius: 8px;
                 margin-right: 15px;
             }
@@ -119,7 +118,7 @@ export const Container = styled.div`
                     font-size: 14px;
                     transition-duration: .5s;
                     text-align: center;
-                    background-color: ${props => props.mainColors.mainRed};
+                    background-color: #2d2d2d;
                     padding: 9px;
                     border-radius: 8px;
                     margin-right: 15px;

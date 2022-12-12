@@ -24,21 +24,25 @@ export const Container = styled.div`
         top: 50%;
         transform: translate(-50%, -50%);
         border-radius: .6rem;
-        -webkit-animation:slide-top .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-top .5s cubic-bezier(.25,.46,.45,.94) both;
+        -webkit-animation:slide-top1 .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-top1 .5s cubic-bezier(.25,.46,.45,.94) both;
 
-    @keyframes slide-top{
-    0%{-webkit-transform:translate(-50%, 0%);transform:translate(-50%, 0%); opacity: 0;}
-    100%{-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%)}}
-        .exitModel{
-            position: absolute;
-            margin: 0.6rem;
-            cursor: pointer;
+        @keyframes slide-top1{
+        0%{-webkit-transform:translate(-50%, 0%);transform:translate(-50%, 0%); opacity: 0;}
+        100%{-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%)}
+    }
 
-            svg{
-                width: 30px;
-                height: 30px;
+
+
+            .exitModel{
+                position: absolute;
+                margin: 0.6rem;
+                cursor: pointer;
+
+                svg{
+                    width: 30px;
+                    height: 30px;
+                }
             }
-        }
 
         .content{
             display: flex;

@@ -1,5 +1,6 @@
 // * Modules * //
 import React, { useContext } from 'react'
+import { Link } from 'react-router-dom';
 import { PopupContext } from '../../context/PopupContext';
 
 // * Exports * //
@@ -15,9 +16,13 @@ export function Header(props) {
  return (
     <Styled.Container mainHeader={header} mainColors={defaultColors} >
       <div className='content-header center-relative'>
+      <Link to={`/`}>
+         
          <div className='logo'>
                <img crossorigin src={header.logo} />
          </div>
+
+      </Link>
          <ul className="section-ul">
             {buttonsArray.map(button => 
                   <a href={button.link}>
