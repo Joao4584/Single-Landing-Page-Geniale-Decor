@@ -25,7 +25,7 @@ export function AcessSite(props) {
                                 </p>
                 </Fade>
                 <Fade bottom >  
-                        <a onClick={() => { setRequestPopup(true)}}>
+                        <a href="https://loja.genialedecor.com.br">
                                     <div className='modelButton'>
                                     {acessEcommerceSection.button.text}
                                     </div>

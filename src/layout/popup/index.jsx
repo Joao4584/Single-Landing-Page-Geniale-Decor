@@ -1,23 +1,24 @@
 // * Modules * //
-import React, { useContext, useRef  } from 'react'
+import React, { useContext, useRef, useState  } from 'react'
 import {BiX} from 'react-icons/bi'
 import { Toast } from 'primereact/toast';
 import { Input } from 'antd';
 const { Search } = Input;
+import Countdown from 'react-countdown';
+
 // * Exports * //
 import { Container } from '../../styles/popup.style'
 import { PopupContext } from '../../context/PopupContext';
 import svgModel from '../../assets/9936433.svg'
 import { ApiRequest } from '../../api';
-
-
-
+import Clock from '../../hooks/clockTimer/clock';
+import { useEffect } from 'react';
 
 // * Components * //
 export function PopUpComponent(props) {
     const { requestPopup, setRequestPopup } = useContext(PopupContext);
     const toast = useRef(null);
-    
+    // ? Mail Component
     const showSuccess = () => {
         toast.current.show({severity:'success', summary: 'Email Enviado', detail:'Email Enviado Com Sucesso!', life: 3000});
     }
@@ -41,8 +42,11 @@ export function PopUpComponent(props) {
 
        }
     }
-
-
+    // ? Timer Component
+    var deadline = dateTimer;
+    
+    
+    
  return (
     <Container>
         <Toast ref={toast} />
@@ -51,14 +55,17 @@ export function PopUpComponent(props) {
                
                 <div className="text">
             <div className="exitModel" onClick={setRequestPopup}><BiX/></div>
+           
                     <div className="content-text">
-
-                        <h4>Estamos reformando nossa loja! Se inscreva para ficar por dentro 😀 </h4>
-                        <div className="button">
+                    <h3 className=''>Lançamento da loja </h3>
+                        <h3><Clock id="clock-timer" deadline={deadline} /></h3>
+                        <h4>Deixe seu email para te avisarmos sobre o lançamento! </h4>
+                       <div className="button">
                         <Search placeholder="Coloque seu E-mail" enterButton="Enviar" size="large" onSearch={(e) => {execMail(e)  }} />
-
+                        
 
                     </div>
+                    
                         </div>
                 </div>
 

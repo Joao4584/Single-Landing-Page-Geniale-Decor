@@ -30,7 +30,7 @@ export function Header(props) {
                   </a>
                   )}
    
-            <a onClick={() => { setRequestPopup(true)}} ><li className="btn-red">{header.market.title}
+            <a href="https://loja.genialedecor.com.br"><li className="btn-red">{header.market.title}
             
             </li></a>
          </ul>

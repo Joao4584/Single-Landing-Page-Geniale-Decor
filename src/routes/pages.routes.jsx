@@ -30,7 +30,7 @@ export function Rotas() {
 
 
     return(<>
-             <RouterProvider router={routings} />
+             <RouterProvider basename="/index.html" router={routings} />
     </>);
 }
 

@@ -50,6 +50,48 @@ export const Container = styled.div`
             height: 100%;
             position: relative;
 
+            .content-text{
+              
+
+                h3{
+                    font-size: 1.4rem;
+                    color: #575757;
+                    padding: 0;
+                    text-align: center;
+
+                    #clock-component{
+                        position: relative;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        display: flex;
+                        width: 280px;
+                        justify-content: space-around;
+                        text-align: center;
+                        color: #ffffff;
+                        font-size: 2rem;
+                        .text-timer{
+                            font-size: 0.7rem;
+                            color: #ececec;
+                          
+                        }
+
+                        .clocks{
+                            background-color: #535353;
+                            width: 53px;
+                            height: 60px;
+                            padding-top: 2px;
+                            border-radius: .3rem;
+                        }
+                    }
+                }
+                .font-bottom{
+                
+                    margin-top: 10px !important;
+                    top: 0;
+                    padding: 0;
+                    font-size: .8rem !important;
+                }
+            }
 
             .text{
                 width: 60%;
@@ -60,17 +102,19 @@ export const Container = styled.div`
                     z-index: 1;
                     position: absolute;
                     left: 50%;
-                    top: 35%;
+                    top: 38%;
                     transform: translate(-50%, -50%);
 
                     h4{
-                        font-size: 1.4rem;
+                        font-size: 1rem;
                         color: #575757;
+                     text-align: center;
+                     margin-top: 11%;
                     }
 
 
                    .ant-btn-primary{
-                    background-color: #824040ac;
+                    background-color: #535353;
                    }
                 }
             }
@@ -90,6 +134,8 @@ export const Container = styled.div`
                     transform: translate(-22%, -50%);
                 }
             }
+
+            
 
         }
     }
@@ -128,22 +174,58 @@ export const Container = styled.div`
             width: 100%;
             height: 100%;
             position: relative;
+            .content-text{
+              
 
+              h3{
+                  font-size: 1.2rem;
+                  color: #575757;
+                  padding: 0;
+                  text-align: center;
+
+                  #clock-component{
+                      position: relative;
+                      left: 50%;
+                      transform: translateX(-50%);
+                      display: flex;
+                      width: 280px;
+                      justify-content: space-around;
+                      text-align: center;
+                      color: #ffffff;
+                      font-size: 1.4rem;
+                      .text-timer{
+                          font-size: 0.7rem;
+                          color: #ececec;
+                        
+                      }
+
+                      .clocks{
+                          background-color: #535353;
+                          width: 53px;
+                          height: 50px;
+                          padding-top: 2px;
+                          border-radius: .3rem;
+                      }
+                  }
+              }
+            
+          }
+          
 
             .text{
                 width: 100%;
                 position: relative;
 
                 .content-text{
-                    width: 70%;
+                    width: 93%;
                     z-index: 1;
                     position: relative;
-                    top: 90px;
+                    top: 40px;
                     left: 50%;
                     transform: translateX(-50%);
 
                     h4{
-                        font-size: 1.4rem;
+                        font-size: 1.2rem;
                         color: #575757;
                     }
 
@@ -151,8 +233,10 @@ export const Container = styled.div`
                    .ant-btn-primary{
                     background-color: #824040ac;
                    }
+              
                 }
             }
+            
             .content-image{
                 border-radius: 0rem .6rem .6rem 0rem;
                 background-color: transparent;
@@ -163,9 +247,9 @@ export const Container = styled.div`
                 position: relative;
 
                 img{
-                    width: 250px;
+                    width: 160px;
                     position: relative;
-                    
+                    top: 25px;
                     left: 50%;
                     transform: translateX(-50%);
                 }
